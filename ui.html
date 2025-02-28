@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font: 12px sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #18A0FB;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background: #ccc;
+        }
+        .progress {
+            display: none;
+            margin-top: 10px;
+        }
+        .error {
+            color: red;
+            display: none;
+            margin-top: 10px;
+        }
+        #statusLog {
+            margin-top: 10px;
+            padding: 8px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            max-height: 100px;
+            overflow-y: auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Convert Website to Figma</h3>
+        <input type="text" id="urlInput" placeholder="Enter website URL (e.g., https://example.com)">
+        <button id="convertBtn">Convert to Figma</button>
+        <div id="progress" class="progress">Converting website...</div>
+        <div id="statusLog"></div>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script>
+        document.getElementById('convertBtn').onclick = async () => {
+            const urlInput = document.getElementById('urlInput');
+            const progressDiv = document.getElementById('progress');
+            const errorDiv = document.getElementById('error');
+            const statusLog = document.getElementById('statusLog');
+            const convertBtn = document.getElementById('convertBtn');
+
+            if (!urlInput.value) {
+                errorDiv.textContent = 'Please enter a valid URL';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            try {
+                convertBtn.disabled = true;
+                progressDiv.style.display = 'block';
+                statusLog.style.display = 'block';
+                errorDiv.style.display = 'none';
+                statusLog.textContent = 'Starting conversion...';
+
+                await parent.postMessage({ 
+                    pluginMessage: { 
+                        type: 'convert-website',
+                        url: urlInput.value 
+                    }
+                }, '*');
+            } catch (error) {
+                errorDiv.textContent = 'Conversion failed: ' + error.message;
+                errorDiv.style.display = 'block';
+                progressDiv.style.display = 'none';
+                convertBtn.disabled = false;
+            }
+        };
+
+        window.onmessage = async (event) => {
+            const message = event.data.pluginMessage;
+            const progressDiv = document.getElementById('progress');
+            const errorDiv = document.getElementById('error');
+            const statusLog = document.getElementById('statusLog');
+            const convertBtn = document.getElementById('convertBtn');
+
+            if (message.type === 'conversion-complete') {
+                progressDiv.style.display = 'none';
+                convertBtn.disabled = false;
+                statusLog.textContent += '\nConversion completed successfully!';
+            } else if (message.type === 'error') {
+                errorDiv.textContent = message.message;
+                errorDiv.style.display = 'block';
+                progressDiv.style.display = 'none';
+                convertBtn.disabled = false;
+            } else if (message.type === 'status') {
+                statusLog.textContent += '\n' + message.message;
+                statusLog.scrollTop = statusLog.scrollHeight;
+            }
+        };
+    </script>
+</body>
+</html>
