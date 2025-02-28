@@ -99,6 +99,15 @@
                 return;
             }
 
+            // Basic URL validation
+            try {
+                new URL(urlInput.value);
+            } catch (e) {
+                errorDiv.textContent = 'Please enter a valid URL (including https://)';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
             try {
                 convertBtn.disabled = true;
                 progressDiv.style.display = 'block';
