@@ -82,7 +82,8 @@ export class HTMLParser {
 
         // Handle text content
         if (element.childNodes.length === 1 && element.childNodes[0].nodeType === 3) {
-            parsed.textContent = element.textContent?.trim();
+            const content = element.textContent;
+            parsed.textContent = content ? content.trim() : '';
         }
 
         return parsed;

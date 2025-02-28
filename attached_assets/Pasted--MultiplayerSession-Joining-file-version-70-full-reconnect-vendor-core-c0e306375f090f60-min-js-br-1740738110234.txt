@@ -1,0 +1,79 @@
+[MultiplayerSession] Joining file version 70 (full reconnect)
+vendor-core-c0e306375f090f60.min.js.br:77 afterJoinEnd PageSyncing: Loaded incrementally Object
+vendor-core-c0e306375f090f60.min.js.br:77 Manifest error: Invalid permission specified: currentPage
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+6vendor-core-c0e306375f090f60.min.js.br:77 [Local fonts] using agent
+vendor-core-c0e306375f090f60.min.js.br:77 Manifest error: Invalid value for networkAccess. If you want to allow all domains, please add a "reasoning" field to the networkAccess object.
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+353Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+2vendor-core-c0e306375f090f60.min.js.br:77 [Local fonts] using agent
+vendor-core-c0e306375f090f60.min.js.br:77 [jsvm-cpp] main called (emscripten version 2.0.31)
+vendor-core-c0e306375f090f60.min.js.br:77 Syntax error on line 52: Unexpected token .
+        parsed.textContent = element.textContent?.trim();
+                                                 ^
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+K @ 5572-38e0a9711b3c6ccf.min.js.br:427
+await in K
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:557
+await in (anonymous)
+el @ 5572-38e0a9711b3c6ccf.min.js.br:557
+ei @ 5572-38e0a9711b3c6ccf.min.js.br:557
+await in ei
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:557
+await in (anonymous)
+enqueue @ figma_app-9a4cd6504109112b.min.js.br:134
+$ @ 5572-38e0a9711b3c6ccf.min.js.br:101
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:101
+(anonymous) @ figma_app-9a4cd6504109112b.min.js.br:227
+push.851169.Object.assign.system @ 5572-38e0a9711b3c6ccf.min.js.br:1346
+user @ 5572-38e0a9711b3c6ccf.min.js.br:1346
+onSelectItem @ figma_app-9a4cd6504109112b.min.js.br:227
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:1257
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:1257
+ez @ vendor-core-c0e306375f090f60.min.js.br:15
+e$ @ vendor-core-c0e306375f090f60.min.js.br:15
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:15
+tn @ vendor-core-c0e306375f090f60.min.js.br:15
+ti @ vendor-core-c0e306375f090f60.min.js.br:15
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:15
+oL @ vendor-core-c0e306375f090f60.min.js.br:15
+eM @ vendor-core-c0e306375f090f60.min.js.br:15
+tu @ vendor-core-c0e306375f090f60.min.js.br:15
+nz @ vendor-core-c0e306375f090f60.min.js.br:15
+nj @ vendor-core-c0e306375f090f60.min.js.br:15
+t @ vendor-core-c0e306375f090f60.min.js.br:77
+vendor-core-c0e306375f090f60.min.js.br:77 Error: Syntax error on line 52: Unexpected token .
+    at K (5572-38e0a9711b3c6ccf.min.js.br:427:45)
+    at async 5572-38e0a9711b3c6ccf.min.js.br:557:9840
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:557
+Promise.catch
+el @ 5572-38e0a9711b3c6ccf.min.js.br:557
+ei @ 5572-38e0a9711b3c6ccf.min.js.br:557
+await in ei
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:557
+await in (anonymous)
+enqueue @ figma_app-9a4cd6504109112b.min.js.br:134
+$ @ 5572-38e0a9711b3c6ccf.min.js.br:101
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:101
+(anonymous) @ figma_app-9a4cd6504109112b.min.js.br:227
+push.851169.Object.assign.system @ 5572-38e0a9711b3c6ccf.min.js.br:1346
+user @ 5572-38e0a9711b3c6ccf.min.js.br:1346
+onSelectItem @ figma_app-9a4cd6504109112b.min.js.br:227
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:1257
+(anonymous) @ 5572-38e0a9711b3c6ccf.min.js.br:1257
+ez @ vendor-core-c0e306375f090f60.min.js.br:15
+e$ @ vendor-core-c0e306375f090f60.min.js.br:15
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:15
+tn @ vendor-core-c0e306375f090f60.min.js.br:15
+ti @ vendor-core-c0e306375f090f60.min.js.br:15
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:15
+oL @ vendor-core-c0e306375f090f60.min.js.br:15
+eM @ vendor-core-c0e306375f090f60.min.js.br:15
+tu @ vendor-core-c0e306375f090f60.min.js.br:15
+nz @ vendor-core-c0e306375f090f60.min.js.br:15
+nj @ vendor-core-c0e306375f090f60.min.js.br:15
+t @ vendor-core-c0e306375f090f60.min.js.br:77
+vendor-core-c0e306375f090f60.min.js.br:77 Error: Syntax error on line 52: Unexpected token .
+    at K (5572-38e0a9711b3c6ccf.min.js.br:427:45)
+    at async 5572-38e0a9711b3c6ccf.min.js.br:557:9840

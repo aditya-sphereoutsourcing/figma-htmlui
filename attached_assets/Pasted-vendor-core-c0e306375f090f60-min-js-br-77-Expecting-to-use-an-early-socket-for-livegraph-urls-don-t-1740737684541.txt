@@ -1,0 +1,19 @@
+vendor-core-c0e306375f090f60.min.js.br:77 Expecting to use an early socket for livegraph, urls don't match. Expected: wss://www.figma.com/api/livegraph?pv=1&pr=6eba68edf83504bc&pt=1740737333&ph=pLKdNSJmQG6anxm993mHuwlV9C-8FZZMEHIqFFLKSvA&userId=1152675224738433395&anonUserId=337f7762-fbc9-40be-9b45-12c11af3a951&clientType=desktop&commitHash=ec4382e63ff24ce1638430575c5ae5984142263a&preload=%7B%22FileBrowserSidebarData%22%3A%7B%22hash%22%3A%22b5c747a8c20baecfae40cbff794b1b14072c0aad5fb2eb80f9f83f902cb0d165%22%2C%22args%22%3A%7B%22currentOrgId%22%3Anull%2C%22currentTeamId%22%3A%221332992734854668875%22%7D%7D%7D&clientUrl=https%3A%2F%2Fwww.figma.com%2Fdesktop_new_tab%3Ffuid%3D1152675224738433395%26team_id%3D1332992734854668875&desktop=%22125.1.5%22&desktopOS=%2210.0.19045%22 Found: wss://www.figma.com/api/livegraph?pv=1&pr=6eba68edf83504bc&pt=1740737333&ph=pLKdNSJmQG6anxm993mHuwlV9C-8FZZMEHIqFFLKSvA&userId=1152675224738433395&anonUserId=337f7762-fbc9-40be-9b45-12c11af3a951&clientType=web&commitHash=ec4382e63ff24ce1638430575c5ae5984142263a&preload=%7B%22FileBrowserSidebarData%22%3A%7B%22hash%22%3A%22b5c747a8c20baecfae40cbff794b1b14072c0aad5fb2eb80f9f83f902cb0d165%22%2C%22args%22%3A%7B%22currentOrgId%22%3Anull%2C%22currentTeamId%22%3A%221332992734854668875%22%7D%7D%7D&clientUrl=https%3A%2F%2Fwww.figma.com%2Fdesktop_new_tab%3Ffuid%3D1152675224738433395%26team_id%3D1332992734854668875
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+vendor-core-c0e306375f090f60.min.js.br:77 [import] git: e5fa2c538e07eef5714f8e2e3f1cd03ca91c8f80, stamp: AE39F8FCB2F76CED
+vendor-core-c0e306375f090f60.min.js.br:77 Loaded 43 scripts (5251534b), 43 from cache (5251534b)
+12Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+vendor-core-c0e306375f090f60.min.js.br:77 [Fullscreen] Booting... (emscripten version 3.1.65)
+vendor-core-c0e306375f090f60.min.js.br:77 [GPU] graphicsAPI:"WebGL 2", vendor:"Google Inc. (Intel)", renderer:"ANGLE (Intel, Intel(R) HD Graphics Family (0x00000A16) Direct3D11 vs_5_0 ps_5_0, D3D11)" version:"OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))"
+vendor-core-c0e306375f090f60.min.js.br:77 [Fullscreen] Ready in 452.4ms
+vendor-core-c0e306375f090f60.min.js.br:77 resetRenderers Unable to reset null renderers Object
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+vendor-core-c0e306375f090f60.min.js.br:77 resetRenderers Unable to reset null renderers Object
+(anonymous) @ vendor-core-c0e306375f090f60.min.js.br:77
+vendor-core-c0e306375f090f60.min.js.br:77 [FullscreenApp] calling setEditorTheme and setting preference dark
+vendor-core-c0e306375f090f60.min.js.br:77 [Local fonts] using agent
+vendor-core-c0e306375f090f60.min.js.br:77 [FullscreenApp] calling setEditorTheme and setting preference dark
+vendor-core-c0e306375f090f60.min.js.br:77 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/skAAAf7VyQmRisgj13EAP8?role=editor&tracking_session_id=7rHTmiATEjOrmCbe&version=132&recentReload=0&file-load-streaming-compression&user-id=1152675224738433395&client_release=ec4382e63ff24ce1638430575c5ae5984142263a&clientID=d81ea5e1344845d08ab3e9592a1acc93
+vendor-core-c0e306375f090f60.min.js.br:77 [MultiplayerSession] Joining file version 70 (full reconnect)
+vendor-core-c0e306375f090f60.min.js.br:77 afterJoinEnd PageSyncing: Loaded incrementally Object
+vendor-core-c0e306375f090f60.min.js.br:77 Manifest error: Invalid permission specified: currentPage
