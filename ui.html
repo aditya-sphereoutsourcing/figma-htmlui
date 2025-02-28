@@ -46,12 +46,39 @@
             overflow-y: auto;
             display: none;
         }
+        .instructions {
+            margin-top: 10px;
+            padding: 8px;
+            background: #e8f4ff;
+            border-radius: 4px;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+        .sample-urls {
+            margin-top: 5px;
+            font-size: 11px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h3>Convert Website to Figma</h3>
+        <div class="instructions">
+            <strong>Testing Instructions:</strong>
+            <ol>
+                <li>Enter a website URL below (including https://)</li>
+                <li>Click "Convert to Figma"</li>
+                <li>Watch the status log for progress</li>
+                <li>Check the converted design in your Figma canvas</li>
+            </ol>
+        </div>
         <input type="text" id="urlInput" placeholder="Enter website URL (e.g., https://example.com)">
+        <div class="sample-urls">
+            Sample URLs for testing:
+            <br>• https://example.com (Simple layout)
+            <br>• https://figma.com (Complex layout with SVGs)
+        </div>
         <button id="convertBtn">Convert to Figma</button>
         <div id="progress" class="progress">Converting website...</div>
         <div id="statusLog"></div>
