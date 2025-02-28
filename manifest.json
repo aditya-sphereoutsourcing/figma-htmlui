@@ -9,6 +9,5 @@
     "allowedDomains": ["*"],
     "devAllowedDomains": ["*"],
     "reasoning": "This plugin needs to access any website URL to convert its content into Figma designs. It fetches HTML, CSS, images, and other assets from user-specified domains."
-  },
-  "permissions": []
+  }
 }
